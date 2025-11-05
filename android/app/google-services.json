@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329963703083",
+    "project_id": "push-notifcation-1a0c3",
+    "storage_bucket": "push-notifcation-1a0c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329963703083:android:ec9ff3f7049a02f0d9136e",
+        "android_client_info": {
+          "package_name": "com.example.latihan_pribadiiflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM71I8HO62iCl-6fumMwRRGjJIxDmLI08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
