@@ -8,6 +8,8 @@ import 'package:latihan_pribadiiflutter/pages/login_page.dart';
 import 'package:latihan_pribadiiflutter/pages/loginAPIPage.dart';
 import 'package:latihan_pribadiiflutter/pages/player_list_page.dart';
 import 'package:latihan_pribadiiflutter/routes/routes.dart';
+import 'package:latihan_pribadiiflutter/bindings/table_premiere_binding.dart';
+import 'package:latihan_pribadiiflutter/pages/table_premiere_page.dart';
 
 class AppPages {
   static final pages = [
@@ -42,9 +44,10 @@ class AppPages {
       name: AppRoutes.homePageNotif,
       page: () => Homepagenotif(),
     ),
-    // GetPage(
-    //   name: AppRoutes.tablePremiere,
-    //   page: () => TablePremierePage(),
-    // ),
+    GetPage(
+  name: AppRoutes.tablePremiere,
+  page: () => const TablePremierePage(),
+  binding: TablePremiereBinding(),
+),
   ];
 }

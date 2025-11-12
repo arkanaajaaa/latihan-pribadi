@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan_pribadiiflutter/controllers/LoginAPIController.dart';
+import 'package:latihan_pribadiiflutter/routes/routes.dart';
 import 'package:latihan_pribadiiflutter/services/storage_service.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -171,6 +172,36 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 30),
+
+              Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 40),
+            child: ElevatedButton.icon(
+            onPressed: () {
+              Get.toNamed(AppRoutes.tablePremiere);
+              },
+            icon: const Icon(Icons.sports_soccer),
+                      label: const Text(
+                        'Premier League Table',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple[700],
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 32,
+                          vertical: 14,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        elevation: 2,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
 
               // Tombol Logout
               Padding(

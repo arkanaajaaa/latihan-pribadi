@@ -6,6 +6,5 @@ class AppRoutes {
   static const playerEdit = '/playerEdit';
   static const bottomNavPage = '/bottomNav';
   static const homePageNotif = '/homepagenotif';
-  static const tablePremiere = '/tablePremiere';
-  
+  static const tablePremiere = '/tablePremiere'; 
 }
