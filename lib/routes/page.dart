@@ -21,6 +21,12 @@ class AppPages {
       transition: Transition.fadeIn,
     ),
     GetPage(
+      name: AppRoutes.Googlelogincontroller,
+      page: () => const LoginAPIPage(),
+      binding: LoginAPIBinding(),
+      transition: Transition.fadeIn,
+    ),
+    GetPage(
       name: AppRoutes.login,
       page: () => const LoginPage(),
     ),

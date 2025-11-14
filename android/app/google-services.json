@@ -12,7 +12,20 @@
           "package_name": "com.example.latihan_pribadiiflutter"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "329963703083-39arv9riao3io5qad3b1o0qctq2gttba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.latihan_pribadiiflutter",
+            "certificate_hash": "b9ef01ad0ef5ecb7e051d125ccac8c4b7c9e188b"
+          }
+        },
+        {
+          "client_id": "329963703083-f4siv84a0lg6aj605shm462fft1qjbtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBM71I8HO62iCl-6fumMwRRGjJIxDmLI08"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329963703083-f4siv84a0lg6aj605shm462fft1qjbtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

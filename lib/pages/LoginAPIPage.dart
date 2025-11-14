@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan_pribadiiflutter/controllers/LoginAPIController.dart';
+import 'package:latihan_pribadiiflutter/controllers/GoogleLoginController.dart';
 
 class LoginAPIPage extends GetView<LoginAPIController> {
   const LoginAPIPage({Key? key}) : super(key: key);
@@ -197,6 +198,53 @@ class LoginAPIPage extends GetView<LoginAPIController> {
                     )),
                 const SizedBox(height: 24),
 
+
+                // Google Sign-In Button
+             Obx(
+                () => SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: ElevatedButton(
+                    onPressed: Googlelogincontroller().isLoadingg.value
+                        ? null
+                        : Googlelogincontroller().signInWithGoogle,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: Colors.black87,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12.0),
+                      ),
+                      elevation: 2,
+                    ),
+                    child: Googlelogincontroller().isLoadingg
+                    .value
+                        ? const SizedBox(
+                            height: 24,
+                            width: 24,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              color: Colors.black87,
+                            ),
+                          )
+                        : Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                'Sign in with Google',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black87,
+                                ),
+                              ),
+                            ],
+                          ),
+                  ),
+                ),
+
+                
+              ),
+              const SizedBox(height: 14),
                 // Divider
                 Row(
                   children: [
